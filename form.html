@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div id="wrapper"></div>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/challenge.html">Challenge</a></li>
+            <li><a href="#">Recipe</a></li>
+            <li><a href="/form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Reserve Your Room</h1>
+        <h2>Our reservation policies</h2>
+    </header>
+
+    <section class="policies">
+        <ul>
+            <li>Check-in time after 3:00pm on</li>
+            <li>Check-out time by 11:00am or charges are incurred</li>
+            <li>Breakfast and afternoon tea/snacks included in cost</li>
+            <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+            <li>50% deposit required at booking</li>
+            <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+        </ul>
+    </section>
+
+    <section class="reserve">
+        <form method="post" name="reservation" data-netlify="true">
+
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text"name="firstName" id="firstName" placeholder="First Name"required> 
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text"name="lastName" id="lastName" placeholder="Last Name"required> 
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email"name="email" id="email" placeholder="Email"required>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel"name="phone" id="phone" placeholder="Phone Number"required>
+            </div>
+
+            <div>
+                <label for="checkIn">Check-in Date:</label>
+                <input type="date"name="checkIn" id="checkIn" required>
+            </div>
+
+            <div>
+                <label for="checkOut">Check-out Date:</label>
+                <input type="date"name="checkOut" id="checkOut" required>
+            </div>
+
+            <div>
+                <label for="numberofguests">Number of Guests (4 is maximum):</label>
+                <input type="numberofguests"name="guests" id="guests" min="1" max="4" required>
+            </div>
+
+            <div>
+                <label for="roomType">Room Type:</label>
+                <select name="roomType" id="roomType" required>
+                    <option value="">Select a room type</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                </select>
+            </div>
+
+            <div>
+                <div>Ocean View (additional cost)</div>
+                <label for="view">Yes</label>
+                <input type="radio" name="view" id="yes" value="yes" required>
+                
+                <label for="view">No</label>
+                <input type="radio" name="view" id="no" value="no" required>
+            </div>
+
+            <div>
+                <label for="notes">List Allergies or Other Requests:</label>
+                <textarea name="notes" id="notes" rows="4" cols="50"></textarea>
+            </div>
+
+            <div>
+                <label for="vaccineProof">Upload Vaccine Proof:</label>
+                <input type="file" name="vaccineProof" id="vaccineProof" accept="image/*" required>
+            </div>
+            
+            <div>
+                <label for="terms">I agree to all the terms listed above.</label>
+                <input type="checkbox" name="terms" id="terms" required>
+            </div>
+
+            <div>
+                Create a password to return. Username is your email.<input type="password"name="password" value="password">
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            <div>
+                <button type="reset">Reset</button>
+            </div>
+
+            <footer>
+                <p>&copy; 2025 Ocean View Hotel<br>Kennebunkport, ME</p>
+            </footer>
+
+
+        </form>
+    </section>
+
+
+</body>
+</html>
