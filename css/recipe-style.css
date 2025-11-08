@@ -163,3 +163,128 @@ footer ul {
 footer p {
     clear: both;
 }
+
+/* media queries go below */
+
+
+
+@media (max-width: 811px) {
+
+    html {
+        font-size: 1.1rem;
+        line-height: 130%;
+    }
+    main {
+        width: 90%;
+        
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        color:#67440f;
+        text-shadow: 3px 3px 6px #ccc;
+    }
+    h2 {
+        font-size: 1.9rem;
+        color: #67440f;
+    }
+
+    img {
+        float: none;
+        display: block;
+        margin: 0 auto 2rem auto;
+        max-width: 50%;
+
+    }
+
+    .details, .ingredients, .instructions, .nutrition {
+        font-size: 1rem;
+        float: none;
+        width: 90%;
+
+    }
+
+    blockquote {
+        width: 280px;
+        height: 280px;
+        padding: 70px 15px 15px 15px;
+        font-size: 1.7rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .col1, .col2, .col3 {
+        width: 90%;
+        display: block;
+        float: none;
+    }
+}
+
+
+@media (max-width: 360px) {
+    html {
+        line-height: 135%;
+
+    }
+
+    nav a {
+        padding: 5px;
+        letter-spacing: normal;
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        padding-left: 10px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-shadow: none;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 60%;
+    }
+
+    .rate {
+        font-size: 1rem;
+    }
+
+    .details, .ingredients, .instructions, .nutrition {
+        width: 90%;
+        float: none;
+    }
+
+    blockquote {
+        width: 250px;
+        height: 250px;
+        padding: 60px 10px 10px 10px;
+        font-size: 1.4rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .col1, .col2, .col3 {
+        width: 90%;
+        display: block;
+        float: none;
+    }
+}
+
+
+
+
+  
+
