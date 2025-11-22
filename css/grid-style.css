@@ -1,0 +1,129 @@
+html {
+    box-sizing: border-box;
+    font-family: 'lucida grande', 'lucida sans unicode', 'lucida sans', geneva, verdana, sans-serif;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+    width: 1100px;
+    margin: 0 auto 30px;
+    color: white;
+    background-color: rgb(35, 71, 118);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+nav li {
+    list-style-type: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline;
+    background-color: rgb(25, 51, 88);
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.parent {
+    width:1100px;
+    height:680px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns each using 1 frection of overall width */
+    grid-template-rows: repeat(4, 1fr);  /* 4 rows each using 1 fraction of overall height */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.div1 span {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5rem;
+    color: rgb(25, 51, 88);
+    line-height: 50%;
+}
+
+.div1 p {
+    font-size: 1.5rem;
+    color:rgba(0, 0, 0, 0.621)
+}
+
+/* grid-area: row-start / column-start / row-end / column-end; */
+
+.div1 { 
+    grid-area: 1 / 1 / 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div2 { 
+    grid-area: 1 / 4 / 3 / 6;
+    background-color: lightgreen; 
+}
+
+.div3 { 
+    grid-area: 1 / 6 / 2 / 8;
+    background-color: lightcoral; 
+}
+
+.div4 { 
+    grid-area: 2 / 6 / 3 / 8; 
+    background-color: gold;
+}
+
+.div5 { 
+    grid-area: 3 / 1 / 5 / 4; 
+    background-color: lime;
+}
+
+.div6 { 
+    grid-area: 3 / 4 / 4 / 5;
+    background-color: orangered; 
+}
+
+.div7 { 
+    grid-area: 3 / 5 / 4 / 6;
+    background-color: violet; 
+}
+
+.div8 { 
+    grid-area: 4 / 4 / 5 / 6; 
+    background-color: turquoise;
+}
+
+.div9 { 
+    grid-area: 3 / 6 / 5 / 8;
+    background-color:rgb(0, 76, 255) 
+}
+
+footer {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
